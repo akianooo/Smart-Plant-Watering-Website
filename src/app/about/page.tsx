@@ -1,5 +1,8 @@
 import Layout from "@/components/Layout";
-
+import Image from "next/image";
+import DevImage1 from "../../../public/Image1.jpg";
+import DevImage2 from "../../../public/Image2.jpg";
+import DevImage3 from "../../../public/Image3.jpg";
 export default function AboutPage() {
   return (
     <section className="py-16 px-6 max-w-4xl mx-auto">
@@ -29,24 +32,39 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
         {/* Developer 1 */}
         <div>
-          <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-300 flex items-center justify-center">
-            <span className="text-gray-500 text-sm">Image</span>
+          <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden relative">
+            <Image
+              src={DevImage1}
+              alt="Developer 1"
+              fill
+              className="object-cover"
+            />
           </div>
           <p className="font-medium text-gray-800">Kian Bernardo</p>
         </div>
 
         {/* Developer 2 */}
         <div>
-          <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-300 flex items-center justify-center">
-            <span className="text-gray-500 text-sm">Image</span>
+          <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden relative">
+            <Image
+              src={DevImage2}
+              alt="Developer 2"
+              fill
+              className="object-cover"
+            />
           </div>
           <p className="font-medium text-gray-800">Jamaica Goyone</p>
         </div>
 
         {/* Developer 3 */}
         <div>
-          <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-300 flex items-center justify-center">
-            <span className="text-gray-500 text-sm">Image</span>
+          <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden relative">
+            <Image
+              src={DevImage3}
+              alt="Developer 3"
+              fill
+              className="object-cover"
+            />
           </div>
           <p className="font-medium text-gray-800">John Mark Rubio</p>
         </div>
