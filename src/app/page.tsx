@@ -7,7 +7,7 @@ export default function HomePage() {
         <div className="max-w-xl">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 mb-6">
             Smarter Watering. <br />
-            <span className="text-[#00c97a]">Healthier Plants.</span>
+            <span className="text-[#364942]">Healthier Plants.</span>
           </h1>
 
           <p className="text-lg text-gray-600 mb-8">
@@ -16,7 +16,7 @@ export default function HomePage() {
             again.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-10">
+          {/* <div className="flex flex-wrap gap-4 mb-10">
             <button className="bg-[#00c97a] text-white font-semibold px-8 py-3 rounded-xl shadow-lg hover:scale-105 hover:bg-[#00b86b] transition-all duration-200">
               Get Started
             </button>
@@ -24,7 +24,7 @@ export default function HomePage() {
             <button className="border-2 border-[#00c97a] text-[#00c97a] font-semibold px-8 py-3 rounded-xl hover:bg-[#00c97a] hover:text-white transition-all duration-200">
               See Demo
             </button>
-          </div>
+          </div> */}
 
           {/* TRUST BADGES */}
           <div className="flex items-center gap-6 text-sm text-gray-500">
@@ -37,7 +37,7 @@ export default function HomePage() {
         {/* RIGHT IMAGE */}
         <div className="relative">
           <img
-            src="/plant-hero.png"
+            src="/SmartPlant.png"
             alt="Smart Plant Device"
             className="w-[350px] md:w-[420px] rounded-2xl shadow-2xl"
           />
