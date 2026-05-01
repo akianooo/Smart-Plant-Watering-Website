@@ -3,13 +3,23 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-green: #388e3c; /* Uniform, darker, eco-friendly green */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary-green);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+@layer utilities {
+  .show-guide {
+    outline: 4px dashed red;
+    outline-offset: -1px; /* keeps it hugging the edge */
+    z-index: 9999; /* ensures it's on top of other elements */
+  }
 }
 
 @media (prefers-color-scheme: dark) {
